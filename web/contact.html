@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>冒险家协会 · 提瓦特导览</title>
+  <meta name="description" content="留言板与联系方式，欢迎交流游戏心得和网页设计建议。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html"><span class="brand-mark"></span>提瓦特导览</a>
+    <nav class="nav-links">
+      <a href="../index.html">首页</a>
+      <a href="about.html">旅行者档案</a>
+      <a href="hobby.html">角色与深渊</a>
+      <a href="gallery.html">提瓦特风光</a>
+      <a href="contact.html" class="active">冒险家协会</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container inner">
+    <h1>冒险家协会</h1>
+    <p>有问题想问、或者想吐槽这个网页的排版，都欢迎留个话</p>
+    <a class="crumb" href="../index.html">← 返回首页</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <p class="eyebrow">LEAVE A MESSAGE</p>
+        <h2>给我留个言</h2>
+        <p>
+          如果你也在玩这款游戏，欢迎告诉我你最喜欢哪个地区、哪张地图最让你停下脚步。
+          如果你是在帮我看作业，欢迎直接在留言里指出排版或者代码的问题，我很乐意改。
+        </p>
+
+        <form class="form" onsubmit="alert('这是作业用的静态页面，留言不会真的发送出去。\n需要联系我的话，请用右侧的方式。'); return false;">
+          <div>
+            <label for="nickname">你的称呼</label>
+            <input type="text" id="nickname" name="nickname" placeholder="怎么称呼你？" required>
+          </div>
+          <div>
+            <label for="email">邮箱（可选）</label>
+            <input type="email" id="email" name="email" placeholder="方便我回复你">
+          </div>
+          <div>
+            <label for="msg">想说的话</label>
+            <textarea id="msg" name="msg" placeholder="比如：我最喜欢须弥的雨林……" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-gold" style="border:none;cursor:pointer">提交留言</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <div class="split-media" style="margin-bottom:26px">
+          <img src="../image/g3.jpg" alt="旅途中的风景">
+        </div>
+
+        <div class="mini">
+          <h4>其他能找到我的地方</h4>
+          <p style="margin-bottom:6px">邮箱：xxx@example.com</p>
+          <p style="margin-bottom:6px">GitHub：github.com/你的用户名</p>
+          <p style="margin-bottom:0">游戏内：优游a5（偶尔上线）</p>
+        </div>
+
+        <div class="mini" style="margin-top:18px">
+          <h4>关于这个页面</h4>
+          <p>
+            本站是《新生实践课》的作业之一，全部内容由本人手写，
+            使用相对路径组织页面与图片，并部署在 GitHub Pages 上。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:48px">
+      <a class="btn btn-line" href="../index.html">返回首页</a>
+      <a class="btn btn-line" href="about.html" style="margin-left:10px">回到旅行者档案</a>
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <h4>提瓦特导览</h4>
+        <p>一个玩家自己整理的旅行笔记，非官方网站，与游戏开发商无隶属关系。</p>
+        <p>页面中的插图均为本人游戏截图，仅供学习交流使用。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <div class="footer-links">
+          <a href="../index.html">首页</a>
+          <a href="about.html">旅行者档案</a>
+          <a href="hobby.html">角色与深渊</a>
+          <a href="gallery.html">提瓦特风光</a>
+          <a href="contact.html">冒险家协会</a>
+        </div>
+      </div>
+      <div>
+        <h4>制作信息</h4>
+        <p>姓名：李奕霏</p>
+        <p>学号：U202615163</p>
+        <p>班级：计算机2608 班</p>
+        <p>完成时间：2026 年 11 月 13 日</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 提瓦特导览 · 个人网页设计作业</span>
+      <span>使用 HTML + CSS + JavaScript 手写完成</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" title="回到顶部">↑</button>
+<script src="main.js"></script>
+</body>
+</html>
